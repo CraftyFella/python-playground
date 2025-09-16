@@ -1,14 +1,7 @@
 {
     "name": "Python Workshop Environment",
-    "dockerComposeFile": "docker-compose.yml",
-    "service": "workshop-env",
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-    "forwardPorts": [
-        8888
-    ],
-    "hostRequirements": {
-        "cpus": 2
-    },
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "forwardPorts": [8888],
     "postCreateCommand": "pip install -r requirements.txt",
     "customizations": {
         "codespaces": {

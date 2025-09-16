@@ -82,8 +82,7 @@ You should see output confirming:
 ## 🔧 Container Details
 
 The dev container uses:
-- **Base image:** `python:3.11-slim`
-- **Workspace:** Mounted at `/workspaces/workshop`
+- **Base image:** `mcr.microsoft.com/devcontainers/python:3.11`
 - **Port forwarding:** 8888 (for Jupyter if needed)
 - **Auto-setup:** Dependencies installed via `requirements.txt`
 
@@ -101,7 +100,6 @@ To modify the environment:
 
 - **Add Python packages:** Edit `requirements.txt`
 - **Change container settings:** Edit `.devcontainer/devcontainer.json`
-- **Modify Docker setup:** Edit `.devcontainer/docker-compose.yml`
 
 ## 🐛 Troubleshooting
 
