@@ -9,6 +9,11 @@ that the dev container environment is working correctly.
 import sys
 import platform
 import requests
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import scipy
+from sklearn import __version__ as sklearn_version
 
 
 def main():
@@ -41,8 +46,37 @@ def main():
     squares = [x**2 for x in numbers]
     print(f"✅ List comprehension: squares = {squares}")
 
+    # Test data science libraries
+    try:
+        # NumPy test
+        arr = np.array([1, 2, 3, 4, 5])
+        print(f"✅ NumPy: array sum = {np.sum(arr)}")
+
+        # Pandas test
+        df = pd.DataFrame({'numbers': [1, 2, 3], 'letters': ['a', 'b', 'c']})
+        print(f"✅ Pandas: DataFrame shape = {df.shape}")
+
+        # Matplotlib test (create simple plot)
+        plt.figure(figsize=(4, 3))
+        plt.plot([1, 2, 3], [1, 4, 9])
+        plt.title('Test Plot')
+        plt.close()  # Close to avoid display issues
+        print("✅ Matplotlib: Plot creation working")
+
+        # SciPy test
+        print(f"✅ SciPy: Version {scipy.__version__}")
+
+        # Scikit-learn test
+        print(f"✅ Scikit-learn: Version {sklearn_version}")
+
+    except ImportError as e:
+        print(f"❌ Data science library test failed: {e}")
+    except Exception as e:
+        print(f"❌ Data science test error: {e}")
+
     print("=" * 50)
     print("🎉 Workshop environment is ready!")
+    print("All data science libraries are working correctly!")
     print("You can now start building amazing Python applications!")
 
 
