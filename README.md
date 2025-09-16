@@ -1,21 +1,42 @@
 # Python Workshop with Dev Containers
 
-This repository provides a ready-to-use Python development environment using Visual Studio Code Dev Containers. Perfect for workshops, tutorials, or collaborative development.
+This repository provides a ready-to-use Python development environment using GitHub Codespaces or Visual Studio Code Dev Containers. Perfect for workshops, tutorials, or collaborative development.
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Option 1: GitHub Codespaces (Recommended)
+
+The easiest way to get started - no local setup required!
+
+1. **Open in Codespaces:**
+   - Click the green "Code" button on this repository
+   - Select "Codespaces" tab
+   - Click "Create codespace on main"
+
+2. **Wait for setup:**
+   - The environment will automatically build and install Python dependencies
+   - This may take 2-3 minutes on first run
+
+3. **Start coding:**
+   - VS Code will open in your browser with everything ready
+   - The workspace includes all necessary extensions and tools
+
+### Option 2: Local Development with Dev Containers
+
+For local development with your own VS Code installation:
+
+#### Prerequisites
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for VS Code
 
-### Getting Started
+#### Getting Started
 
 1. **Clone this repository:**
    ```bash
-   git clone <your-repo-url>
-   cd workshop
+   git clone https://github.com/CraftyFella/python-playground.git
+   cd python-playground
    ```
 
 2. **Open in VS Code:**
@@ -34,7 +55,7 @@ This repository provides a ready-to-use Python development environment using Vis
 
 ## 🧪 Testing the Environment
 
-Once the dev container is running, verify everything works:
+Once your environment is running (either Codespaces or local dev container), verify everything works:
 
 ```bash
 python hello_world.py
@@ -83,6 +104,18 @@ To modify the environment:
 - **Modify Docker setup:** Edit `.devcontainer/docker-compose.yml`
 
 ## 🐛 Troubleshooting
+
+### GitHub Codespaces Issues
+
+**Codespace won't start:**
+- Try creating a new codespace
+- Check your GitHub Codespaces usage limits
+
+**Slow performance:**
+- Codespaces may take time to warm up on first use
+- Consider upgrading to a larger machine type if available
+
+### Local Dev Container Issues
 
 **Container won't start:**
 - Ensure Docker Desktop is running
