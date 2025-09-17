@@ -54,8 +54,14 @@ Once the codespace opens, you'll see VS Code in your browser with two files alre
    ✅ Requests library: Working
    ✅ Basic math: sum([1, 2, 3, 4, 5]) = 15
    ✅ List comprehension: squares = [1, 4, 9, 16, 25]
+   ✅ NumPy: array sum = 15
+   ✅ Pandas: DataFrame shape = (3, 2)
+   ✅ Matplotlib: Plot creation working
+   ✅ SciPy: Version x.x.x
+   ✅ Scikit-learn: Version x.x.x
    ==================================================
    🎉 Workshop environment is ready!
+   All data science libraries are working correctly!
    You can now start building amazing Python applications!
    ```
 
@@ -74,6 +80,11 @@ Your Python environment is now ready! You can:
   - `requests` - HTTP library
   - `jupyter` - Interactive notebooks
   - `ipython` - Enhanced Python shell
+  - `numpy` - Numerical computing
+  - `pandas` - Data manipulation and analysis
+  - `matplotlib` - Plotting library
+  - `scipy` - Scientific computing
+  - `scikit-learn` - Machine learning library
 - **VS Code extensions:**
   - Python extension
   - Jupyter extension
@@ -89,7 +100,7 @@ Your Python environment is now ready! You can:
 ## 🔧 Technical Details
 
 - **Base image:** Microsoft's official Python 3.11 devcontainer
-- **Pre-installed packages:** requests, jupyter, ipython
+- **Pre-installed packages:** requests, jupyter, ipython, numpy, pandas, matplotlib, scipy, scikit-learn
 - **VS Code extensions:** Python, Jupyter
 - **Auto-opens:** README.md and hello_world.py on startup
 
