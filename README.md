@@ -4,29 +4,20 @@ This repository provides a ready-to-use Python development environment using Git
 
 ## 🚀 Getting Started
 
-### Step 1: Fork This Repository (Recommended for Workshops)
+### Step 1: Open in GitHub Codespaces
 
-**Why fork?** Each person gets their own free GitHub Codespaces hours instead of using the workshop organizer's quota.
+1. **Click the green "Code" button**
+2. **Select the "Codespaces" tab**
+3. **Click "Create codespace on main"**
 
-1. Click the **"Fork"** button at the top right of this repository
-2. Choose your GitHub account as the destination
-3. Click **"Create fork"**
-
-### Step 2: Open in GitHub Codespaces
-
-1. **Navigate to your forked repository** (or use this one directly)
-2. **Click the green "Code" button**
-3. **Select the "Codespaces" tab**
-4. **Click "Create codespace on main"**
-
-### Step 3: Wait for Environment Setup
+### Step 2: Wait for Environment Setup
 
 - The codespace will automatically start building
 - Python 3.11 and dependencies will be installed
 - VS Code will open in your browser
 - **This takes 2-3 minutes on first run** ⏱️
 
-### Step 4: Verify Everything Works
+### Step 3: Verify Everything Works
 
 Once the codespace opens, you'll see VS Code in your browser with two files already open:
 - `README.md` (this file)
@@ -65,7 +56,7 @@ Once the codespace opens, you'll see VS Code in your browser with two files alre
    You can now start building amazing Python applications!
    ```
 
-### Step 5: Start Coding!
+### Step 4: Start Coding!
 
 Your Python environment is now ready! You can:
 - Create new `.py` files
